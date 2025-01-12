@@ -1,6 +1,10 @@
 {
-  "name": "ngx-material-iconset-optimize",
-  "version": "0.0.1",
+  "name": "@gerandon/ngx-material-iconset-optimize",
+  "version": "1.0.0",
+  "bin": {
+    "ngx-material-iconset-optimize": "src/bin/index.js"
+  },
+  "main": "src/lib/ngx-material-iconset-optimize.js",
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0"
@@ -8,5 +12,6 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "commonjs"
 }

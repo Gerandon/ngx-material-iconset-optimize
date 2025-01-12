@@ -9,11 +9,6 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "ngx-material-iconset-optimize": [
-        "./dist/ngx-material-iconset-optimize"
-      ]
-    },
     "skipLibCheck": true,
     "isolatedModules": true,
     "esModuleInterop": true,

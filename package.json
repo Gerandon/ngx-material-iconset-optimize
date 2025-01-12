@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --project demo --base-href=/ngx-widgets/",
-    "build:lib": "ng build ngx-material-iconset-optimize",
-    "watch:lib": "ng build ngx-material-iconset-optimize --watch",
+    "compile": "tsc --project projects/ngx-material-iconset-optimize/tsconfig.lib.json && cd dist/ngx-material-iconset-optimize && npm pack",
+    "test:watch": "nodemon --watch './**/*' --exec 'npm run test'",
     "test": "ng test"
   },
   "private": true,
@@ -22,6 +22,8 @@
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
     "bootstrap": "^5.3.3",
+    "commander": "^13.0.0",
+    "@gerandon/ngx-material-iconset-optimize": "file:dist/ngx-material-iconset-optimize/gerandon-ngx-material-iconset-optimize-1.0.0.tgz",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
